@@ -2,7 +2,8 @@ package main.java;
 
 public class CheapoPlan extends Plan {
     public CheapoPlan(){
-        description = PlansEnum.THECHEAPO.name();
+        name = PlansEnum.THECHEAPO.name();
+        description = "Basic no-frills talk plan";
         price = 29.99;
     }
 }

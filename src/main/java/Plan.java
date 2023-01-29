@@ -1,7 +1,8 @@
 package main.java;
 
 public abstract class Plan {
-    protected String description = "";
+    protected String name = "";
+    protected String description = "No Additional Features";
     protected double price = 0.00;
 
     public double getPrice() {
@@ -10,5 +11,9 @@ public abstract class Plan {
 
     public String getDescription(){
         return description;
+    }
+
+    public String getName() {
+        return name;
     }
 }

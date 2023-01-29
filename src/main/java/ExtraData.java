@@ -1,6 +1,7 @@
 package main.java;
 
 public class ExtraData extends PlanFeatureDecorator {
+    //This is decorator #2
     public ExtraData(Plan plan){
         this.plan = plan;
         price = 15.00;

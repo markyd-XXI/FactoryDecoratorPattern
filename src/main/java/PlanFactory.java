@@ -10,10 +10,13 @@ public class PlanFactory {
 
         if(planName == PlansEnum.THEBASICS){
             plan = new BasicsPlan();
+            plan = new UnlimitedText(plan); //Decorator #1
         }
 
         if(planName == PlansEnum.THEBALLER){
             plan = new BallerPlan();
+            plan = new UnlimitedText(plan);
+            plan = new ExtraData(plan); //Decorator #2
         }
 
         return plan;

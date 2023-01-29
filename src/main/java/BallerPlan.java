@@ -2,7 +2,8 @@ package main.java;
 
 public class BallerPlan extends Plan{
     public BallerPlan(){
-        description = PlansEnum.THEBALLER.name();
+        name = PlansEnum.THECHEAPO.name();
+        description = "Talk plan with: ";
         price = 79.99;
     }
 }
