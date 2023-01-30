@@ -20,25 +20,27 @@ public class Main {
         Plan bobPlan = cellPhoneStore.buildPlan(PlansEnum.THECHEAPO);
         System.out.printf("%s Features: \n * %s",bobPlan.getName(), bobPlan.getDescription());
         System.out.println();
-        System.out.printf("%s Price: %s/mo.", bobPlan.getName(), bobPlan.getPrice());
+        System.out.printf("%s Price: %.2f/mo.", bobPlan.getName(), bobPlan.getPrice());
         System.out.println();
 
         System.out.println();
+        System.out.println("Cindy visits the cell phone store!");
         System.out.printf("Cindy wants the plan: %s", PlansEnum.THEBASICS.name());
         System.out.println();
         Plan cindyPlan = cellPhoneStore.buildPlan(PlansEnum.THEBASICS);
         System.out.printf("%s Features: \n * %s",cindyPlan.getName(), cindyPlan.getDescription());
         System.out.println();
-        System.out.printf("%s Price: %s/mo.", cindyPlan.getName(), cindyPlan.getPrice());
+        System.out.printf("%s Price: %.2f/mo.", cindyPlan.getName(), cindyPlan.getPrice());
         System.out.println();
 
         System.out.println();
+        System.out.println("Marty visits the cell phone store!");
         System.out.printf("Marty wants the plan: %s", PlansEnum.THEBALLER.name());
         System.out.println();
         Plan martyPlan = cellPhoneStore.buildPlan(PlansEnum.THEBALLER);
         System.out.printf("%s Features: \n * %s",martyPlan.getName(), martyPlan.getDescription());
         System.out.println();
-        System.out.printf("%s Price: %s/mo.", martyPlan.getName(), martyPlan.getPrice());
+        System.out.printf("%s Price: %.2f/mo.", martyPlan.getName(), martyPlan.getPrice());
         System.out.println();
     }
 }
