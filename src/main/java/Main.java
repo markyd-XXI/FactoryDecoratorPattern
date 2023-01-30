@@ -3,16 +3,11 @@ package main.java;
 public class Main {
     /**
      * Factory Pattern demonstrated by the PlanFactory which is delegated the task of choosing the correct concrete
-     * implementation of the Plan class depending on which plan is desired.
-     * <p>
-     * Withing the factory class the different concrete implementations of the Plan class are decorated by the Concrete implementations
-     * of the PlanFeatureDecorator to build the unique features of a cell phone plan. There are two concrete decorators, UnlimitedText
-     * and ExtraData.
+     * implementation of the PlanFeatureFactory class depending on which plan is desired. The PlanFeatureFactory is in charge of
+     * decorating the plan with the proper features to build the unique attributes of a cell phone plan. The decorators are UnlimitedTalk, UnlimitedText and UnlimitedData.
      */
     public static void main(String[] args)
     {
-
-
         CellPhoneStore cellPhoneStore = new CellPhoneStore();
         System.out.println("Bob visits the cell phone store!");
         System.out.printf("Bob wants the plan: %s", PlansEnum.THECHEAPO.name());
